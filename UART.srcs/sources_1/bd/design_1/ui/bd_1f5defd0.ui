@@ -1,0 +1,54 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port vsync -pg 1 -y 340 -defaultsOSRD
+preplace port baud_speed -pg 1 -y 190 -defaultsOSRD
+preplace port o_uart_tx -pg 1 -y 100 -defaultsOSRD
+preplace port parity_type -pg 1 -y 210 -defaultsOSRD
+preplace port hsync -pg 1 -y 360 -defaultsOSRD
+preplace port i_clk_sys -pg 1 -y 360 -defaultsOSRD
+preplace port tx_send_vaild -pg 1 -y 230 -defaultsOSRD
+preplace port i_uart_rx -pg 1 -y 260 -defaultsOSRD
+preplace port rst -pg 1 -y 340 -defaultsOSRD
+preplace port parity_type_status -pg 1 -y 200 -defaultsOSRD
+preplace portBus vgaBlue -pg 1 -y 420 -defaultsOSRD
+preplace portBus vgaRed -pg 1 -y 380 -defaultsOSRD
+preplace portBus vgaGreen -pg 1 -y 400 -defaultsOSRD
+preplace inst speed_select_0 -pg 1 -lvl 2 -y 200 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -y 480 -defaultsOSRD
+preplace inst data_gen_0 -pg 1 -lvl 4 -y 380 -defaultsOSRD
+preplace inst vga_ctrl_0 -pg 1 -lvl 5 -y 360 -defaultsOSRD
+preplace inst uart_tx_0 -pg 1 -lvl 5 -y 100 -defaultsOSRD
+preplace inst uart_rx_0 -pg 1 -lvl 3 -y 420 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 350 -defaultsOSRD
+preplace netloc rx_1 1 0 3 20J 80 NJ 80 700J
+preplace netloc tx_send_vaild_1 1 0 2 NJ 230 NJ
+preplace netloc vga_ctrl_0_vga_r 1 5 1 NJ
+preplace netloc uart_tx_0_o_uart_tx 1 5 1 NJ
+preplace netloc vga_ctrl_0_vga_g 1 5 1 NJ
+preplace netloc baud_speed_1 1 0 2 NJ 190 NJ
+preplace netloc rst_1 1 0 1 20
+preplace netloc util_vector_logic_0_Res 1 1 4 340 400 690 520 1050 520 1370
+preplace netloc vga_ctrl_0_h_addr 1 3 3 1060 530 NJ 530 1690
+preplace netloc speed_select_0_parity_type_status 1 2 4 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc vga_ctrl_0_vsync 1 5 1 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 4 NJ 320 710J 310 1040 500 1380
+preplace netloc uart_rx_0_o_uart_data 1 3 1 1030
+preplace netloc clk_wiz_0_clk_out2 1 1 4 320 330 730 320 1030 60 NJ
+preplace netloc vga_ctrl_0_hsync 1 5 1 NJ
+preplace netloc vga_ctrl_0_v_addr 1 3 3 1070 510 NJ 510 1680
+preplace netloc speed_select_0_cycle_baud 1 2 3 720 100 NJ 100 NJ
+preplace netloc clk_wiz_0_clk_out3 1 1 1 350
+preplace netloc i_clk_sys_1 1 0 1 NJ
+preplace netloc speed_select_0_o_tx_send_vaild 1 2 3 690 120 NJ 120 NJ
+preplace netloc vga_ctrl_0_vga_b 1 5 1 NJ
+preplace netloc parity_type_1 1 0 5 NJ 210 330 90 680 140 NJ 140 NJ
+preplace netloc data_gen_0_data_disp 1 4 1 N
+preplace netloc uart_rx_0_o_rx_done 1 3 1 N
+levelinfo -pg 1 0 170 520 890 1230 1540 1720 -top 0 -bot 540
+"
+}
+{
+   "da_board_cnt":"1"
+}
