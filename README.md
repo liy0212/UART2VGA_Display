@@ -16,4 +16,5 @@ basys3开发板上面的VGA输出是12bit的，图像显示效果不太好
 还附赠了一个串口发送模块，设定成了按下开发板按键会给上位机发送‘1’的ascii码，不需要这个功能可删去。
 
 效果图展示：
+
 ![image](https://github.com/liy0212/UART2VGA_Display/assets/99011995/bb263ac0-2e72-41fe-9d9f-26cc2fd17359)
