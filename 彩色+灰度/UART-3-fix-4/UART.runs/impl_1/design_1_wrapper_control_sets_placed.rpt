@@ -1,0 +1,91 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 13 17:24:46 2023
+| Host         : LAPTOP-A0ISF6QL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    76 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            3 |
+|      3 |            2 |
+|      4 |            1 |
+|      5 |            2 |
+|      6 |            1 |
+|      8 |            1 |
+|     12 |            3 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              11 |            7 |
+| No           | No                    | Yes                    |             192 |           66 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            3 |
+| Yes          | No                    | Yes                    |             125 |           36 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+--------------------------------------------------+------------------+------------------+----------------+
+|                      Clock Signal                      |                   Enable Signal                  | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------------------------------+--------------------------------------------------+------------------+------------------+----------------+
+|  design_1_i/clk_wiz_0/inst/clk_out1                    | design_1_i/vga_ctrl_0/inst/__0                   | rst_IBUF         |                1 |              1 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                    | design_1_i/vga_ctrl_0/inst/hsync_i_1_n_0         | rst_IBUF         |                1 |              1 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                    | design_1_i/uart_tx_0/inst/o_uart_tx_i_1_n_0      | rst_IBUF         |                1 |              1 |
+|  design_1_i/uart_rx_0/inst/r_next_state_reg[2]_i_2_n_0 |                                                  |                  |                1 |              3 |
+|  design_1_i/uart_tx_0/inst/r_next_state_reg[2]_i_2_n_0 |                                                  |                  |                1 |              3 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                    | design_1_i/data_gen_0/inst/ram_0_i_1_n_0         |                  |                3 |              4 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                    |                                                  |                  |                5 |              5 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                    | design_1_i/uart_tx_0/inst/r_tx_cnt[3]_i_1_n_0    | rst_IBUF         |                2 |              5 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                    | design_1_i/uart_tx_0/inst/r_data_tx[5]_i_1_n_0   | rst_IBUF         |                1 |              6 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                    | design_1_i/uart_rx_0/inst/o_uart_data[7]_i_1_n_0 | rst_IBUF         |                2 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                    | design_1_i/vga_ctrl_0/inst/add_v_addr            | rst_IBUF         |                3 |             12 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                    | design_1_i/vga_ctrl_0/inst/vga_r[3]_i_1_n_0      | rst_IBUF         |                5 |             12 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                    | design_1_i/uart_rx_0/inst/r_data_rcv[7]_i_1_n_0  | rst_IBUF         |                3 |             12 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                    | design_1_i/data_gen_0/inst/ram1_rd_en            | rst_IBUF         |                4 |             16 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                    | design_1_i/data_gen_0/inst/ram_rd_en             | rst_IBUF         |                4 |             16 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                    | design_1_i/rgb2gray_0/inst/oValid                | rst_IBUF         |                4 |             16 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                    | design_1_i/uart_rx_0/inst/o_rx_done              | rst_IBUF         |                5 |             19 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                    |                                                  | rst_IBUF         |               12 |             34 |
+|  design_1_i/clk_wiz_0/inst/clk_out3                    |                                                  | rst_IBUF         |               20 |             67 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                    |                                                  | rst_IBUF         |               34 |             91 |
++--------------------------------------------------------+--------------------------------------------------+------------------+------------------+----------------+
+
+
